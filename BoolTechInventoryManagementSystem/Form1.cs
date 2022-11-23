@@ -16,5 +16,10 @@ namespace BoolTechInventoryManagementSystem
         {
             InitializeComponent();
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
