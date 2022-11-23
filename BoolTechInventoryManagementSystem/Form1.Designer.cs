@@ -66,7 +66,6 @@
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.Size = new System.Drawing.Size(142, 20);
             this.passwordTextbox.TabIndex = 3;
-            this.passwordTextbox.Visible = false;
             // 
             // loginButton
             // 
