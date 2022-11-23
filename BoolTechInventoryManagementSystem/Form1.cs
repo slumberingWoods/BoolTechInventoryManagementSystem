@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BoolTechInventoryManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class loginScreenForm : Form
     {
-        public Form1()
+        public loginScreenForm()
         {
             InitializeComponent();
         }
