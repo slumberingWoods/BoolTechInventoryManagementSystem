@@ -64,8 +64,10 @@
             // 
             this.passwordTextbox.Location = new System.Drawing.Point(127, 55);
             this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.ShortcutsEnabled = false;
             this.passwordTextbox.Size = new System.Drawing.Size(142, 20);
             this.passwordTextbox.TabIndex = 3;
+            this.passwordTextbox.UseSystemPasswordChar = true;
             // 
             // loginButton
             // 
