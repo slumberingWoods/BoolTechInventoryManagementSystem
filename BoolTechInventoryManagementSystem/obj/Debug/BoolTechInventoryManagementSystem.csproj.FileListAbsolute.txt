@@ -9,3 +9,5 @@ C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSyst
 C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\bin\Debug\BoolTechInventoryManagementSystem.pdb
 C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\obj\Debug\BoolTechInventoryManagementSystem.exe
 C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\obj\Debug\BoolTechInventoryManagementSystem.pdb
+C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\bin\Debug\System.mdf
+C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\bin\Debug\System_log.ldf
