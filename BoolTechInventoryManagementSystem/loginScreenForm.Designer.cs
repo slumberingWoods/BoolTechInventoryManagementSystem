@@ -68,6 +68,7 @@
             this.passwordTextbox.ShortcutsEnabled = false;
             this.passwordTextbox.Size = new System.Drawing.Size(142, 20);
             this.passwordTextbox.TabIndex = 3;
+            this.passwordTextbox.UseSystemPasswordChar = true;
             // 
             // loginButton
             // 
@@ -93,7 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(299, 145);
+            this.ClientSize = new System.Drawing.Size(299, 146);
             this.Controls.Add(this.adminLoginButton);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.passwordTextbox);
