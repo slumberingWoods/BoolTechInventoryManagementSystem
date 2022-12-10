@@ -35,7 +35,7 @@ namespace BoolTechInventoryManagementSystem
                 if (rd[1].ToString() == username && rd[2].ToString() == password)
                 {
                     passwordCheck = true;
-                    Selection sl = new Selection();
+                    Selection sl = new Selection(password);
                     sl.Show();
                     this.Hide();
                     break;

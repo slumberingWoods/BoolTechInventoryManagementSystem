@@ -12,14 +12,17 @@ namespace BoolTechInventoryManagementSystem
 {
     public partial class Selection : Form
     {
-        public Selection()
+        public string password;
+        public string userPassword { get { return password; } set { password = value; } }
+        public Selection(String password)
         {
             InitializeComponent();
+            password = userPassword;
         }
-
         private void viewItemButton_Click(object sender, EventArgs e)
         {
-
+            viewItemsForm vI = new viewItemsForm(); 
+            vI.ShowDialog();
         }
 
         private void logButton_Click(object sender, EventArgs e)

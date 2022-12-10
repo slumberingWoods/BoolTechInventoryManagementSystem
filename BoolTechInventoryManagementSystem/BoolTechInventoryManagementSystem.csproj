@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addItemForm.Designer.cs">
+      <DependentUpon>addItemForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SystemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="viewItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewItemsForm.Designer.cs">
+      <DependentUpon>viewItemsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addItemForm.resx">
+      <DependentUpon>addItemForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminForm.resx">
       <DependentUpon>adminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="Selection.resx">
       <DependentUpon>Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewItemsForm.resx">
+      <DependentUpon>viewItemsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
