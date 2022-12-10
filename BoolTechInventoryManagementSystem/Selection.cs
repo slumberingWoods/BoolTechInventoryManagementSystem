@@ -16,5 +16,25 @@ namespace BoolTechInventoryManagementSystem
         {
             InitializeComponent();
         }
+
+        private void viewItemButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void financeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewUserButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace BoolTechInventoryManagementSystem
             SqlConnection con = new SqlConnection();
             con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
             con.Open();
-
+            bool passwordCheck = false;
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "Select * from [User]";
             cmd.Connection = con;
@@ -34,11 +34,17 @@ namespace BoolTechInventoryManagementSystem
             {
                 if (rd[1].ToString() == username && rd[2].ToString() == password)
                 {
-                    this.Close();
+                    passwordCheck = true;
+                    Selection sl = new Selection();
+                    sl.Show();
+                    this.Hide();
                     break;
                 }
             }
-            DialogResult res = MessageBox.Show("User or password is incorrect");
+            if (passwordCheck == false)
+            {
+                DialogResult res = MessageBox.Show("User or password is incorrect");
+            }
         }
 
         private void adminLoginButton_Click(object sender, EventArgs e)
@@ -59,7 +65,7 @@ namespace BoolTechInventoryManagementSystem
                 if (rd[1].ToString() == username && rd[2].ToString() == password)
                 {
                     if (rd[3].ToString() == "admin") {
-                        this.Close();
+                        this.Hide();
                         break;
                     }
                     else
