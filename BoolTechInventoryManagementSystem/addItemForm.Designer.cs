@@ -30,20 +30,20 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.nametextBox = new System.Windows.Forms.TextBox();
-            this.typetextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.quantitytextBox = new System.Windows.Forms.TextBox();
+            this.typetextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.aisletextBox = new System.Windows.Forms.TextBox();
+            this.quantitytextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.statustextBox = new System.Windows.Forms.TextBox();
+            this.aisletextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.costtextBox = new System.Windows.Forms.TextBox();
+            this.statustextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.costtextBox = new System.Windows.Forms.TextBox();
             this.addItem = new System.Windows.Forms.Button();
             this.clearData = new System.Windows.Forms.Button();
-            this.pricetextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pricetextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -62,13 +62,6 @@
             this.nametextBox.Size = new System.Drawing.Size(141, 20);
             this.nametextBox.TabIndex = 1;
             // 
-            // typetextBox
-            // 
-            this.typetextBox.Location = new System.Drawing.Point(111, 38);
-            this.typetextBox.Name = "typetextBox";
-            this.typetextBox.Size = new System.Drawing.Size(141, 20);
-            this.typetextBox.TabIndex = 3;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -78,12 +71,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Type";
             // 
-            // quantitytextBox
+            // typetextBox
             // 
-            this.quantitytextBox.Location = new System.Drawing.Point(111, 64);
-            this.quantitytextBox.Name = "quantitytextBox";
-            this.quantitytextBox.Size = new System.Drawing.Size(141, 20);
-            this.quantitytextBox.TabIndex = 5;
+            this.typetextBox.Location = new System.Drawing.Point(111, 38);
+            this.typetextBox.Name = "typetextBox";
+            this.typetextBox.Size = new System.Drawing.Size(141, 20);
+            this.typetextBox.TabIndex = 3;
             // 
             // label3
             // 
@@ -94,12 +87,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Quantity";
             // 
-            // aisletextBox
+            // quantitytextBox
             // 
-            this.aisletextBox.Location = new System.Drawing.Point(111, 90);
-            this.aisletextBox.Name = "aisletextBox";
-            this.aisletextBox.Size = new System.Drawing.Size(141, 20);
-            this.aisletextBox.TabIndex = 7;
+            this.quantitytextBox.Location = new System.Drawing.Point(111, 64);
+            this.quantitytextBox.Name = "quantitytextBox";
+            this.quantitytextBox.Size = new System.Drawing.Size(141, 20);
+            this.quantitytextBox.TabIndex = 5;
             // 
             // label4
             // 
@@ -110,12 +103,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Aisle";
             // 
-            // statustextBox
+            // aisletextBox
             // 
-            this.statustextBox.Location = new System.Drawing.Point(111, 116);
-            this.statustextBox.Name = "statustextBox";
-            this.statustextBox.Size = new System.Drawing.Size(141, 20);
-            this.statustextBox.TabIndex = 9;
+            this.aisletextBox.Location = new System.Drawing.Point(111, 90);
+            this.aisletextBox.Name = "aisletextBox";
+            this.aisletextBox.Size = new System.Drawing.Size(141, 20);
+            this.aisletextBox.TabIndex = 7;
             // 
             // label5
             // 
@@ -126,12 +119,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Status";
             // 
-            // costtextBox
+            // statustextBox
             // 
-            this.costtextBox.Location = new System.Drawing.Point(111, 142);
-            this.costtextBox.Name = "costtextBox";
-            this.costtextBox.Size = new System.Drawing.Size(141, 20);
-            this.costtextBox.TabIndex = 11;
+            this.statustextBox.Location = new System.Drawing.Point(111, 116);
+            this.statustextBox.Name = "statustextBox";
+            this.statustextBox.Size = new System.Drawing.Size(141, 20);
+            this.statustextBox.TabIndex = 9;
             // 
             // label6
             // 
@@ -141,6 +134,13 @@
             this.label6.Size = new System.Drawing.Size(28, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "Cost";
+            // 
+            // costtextBox
+            // 
+            this.costtextBox.Location = new System.Drawing.Point(111, 142);
+            this.costtextBox.Name = "costtextBox";
+            this.costtextBox.Size = new System.Drawing.Size(141, 20);
+            this.costtextBox.TabIndex = 11;
             // 
             // addItem
             // 
@@ -162,13 +162,6 @@
             this.clearData.UseVisualStyleBackColor = true;
             this.clearData.Click += new System.EventHandler(this.clearData_Click);
             // 
-            // pricetextBox
-            // 
-            this.pricetextBox.Location = new System.Drawing.Point(111, 168);
-            this.pricetextBox.Name = "pricetextBox";
-            this.pricetextBox.Size = new System.Drawing.Size(141, 20);
-            this.pricetextBox.TabIndex = 15;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -178,11 +171,18 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Price";
             // 
+            // pricetextBox
+            // 
+            this.pricetextBox.Location = new System.Drawing.Point(111, 168);
+            this.pricetextBox.Name = "pricetextBox";
+            this.pricetextBox.Size = new System.Drawing.Size(141, 20);
+            this.pricetextBox.TabIndex = 15;
+            // 
             // addItemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 273);
+            this.ClientSize = new System.Drawing.Size(308, 278);
             this.Controls.Add(this.pricetextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.clearData);
@@ -207,22 +207,21 @@
         }
 
         #endregion
-
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox nametextBox;
-        private System.Windows.Forms.TextBox typetextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox quantitytextBox;
+        private System.Windows.Forms.TextBox typetextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox aisletextBox;
+        private System.Windows.Forms.TextBox quantitytextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox statustextBox;
+        private System.Windows.Forms.TextBox aisletextBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox costtextBox;
+        private System.Windows.Forms.TextBox statustextBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox costtextBox;
         private System.Windows.Forms.Button addItem;
         private System.Windows.Forms.Button clearData;
-        private System.Windows.Forms.TextBox pricetextBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox pricetextBox;
     }
 }
