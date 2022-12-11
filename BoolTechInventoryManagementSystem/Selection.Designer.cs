@@ -85,6 +85,7 @@
             this.Controls.Add(this.viewItemButton);
             this.Name = "Selection";
             this.Text = "User Menu";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Selection_FormClosed);
             this.ResumeLayout(false);
 
         }

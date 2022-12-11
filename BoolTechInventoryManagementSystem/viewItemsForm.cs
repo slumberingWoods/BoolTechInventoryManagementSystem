@@ -40,7 +40,8 @@ namespace BoolTechInventoryManagementSystem
 
         private void removeButton_Click(object sender, EventArgs e)
         {
-
+            deleteItemForm dIF = new deleteItemForm();
+            dIF.ShowDialog();
         }
 
         private void modifyButton_Click(object sender, EventArgs e)

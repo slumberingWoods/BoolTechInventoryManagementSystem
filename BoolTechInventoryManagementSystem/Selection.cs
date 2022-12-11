@@ -39,5 +39,10 @@ namespace BoolTechInventoryManagementSystem
         {
 
         }
+
+        private void Selection_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

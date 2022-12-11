@@ -48,7 +48,7 @@ namespace BoolTechInventoryManagementSystem
             }
             catch(Exception ex)
             {
-                DialogResult res = MessageBox.Show("Invalid Input");
+                DialogResult res = MessageBox.Show(ex.Message);
             }
         }
         public void clearBoxes()
