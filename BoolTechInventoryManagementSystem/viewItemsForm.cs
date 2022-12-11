@@ -35,18 +35,31 @@ namespace BoolTechInventoryManagementSystem
         private void addButtton_Click(object sender, EventArgs e)
         {
             addItemForm aIF = new addItemForm();
+            aIF.FormClosed += delegate
+            {
+                itemsTableAdapter.Fill(this.systemDataSet.Items);
+            };
             aIF.ShowDialog();
         }
 
         private void removeButton_Click(object sender, EventArgs e)
         {
             deleteItemForm dIF = new deleteItemForm();
+            dIF.FormClosed += delegate
+            {
+                itemsTableAdapter.Fill(this.systemDataSet.Items);
+            };
             dIF.ShowDialog();
         }
 
         private void modifyButton_Click(object sender, EventArgs e)
         {
-
+            modifyItems mIF = new modifyItems();
+            mIF.FormClosed += delegate
+            {
+                itemsTableAdapter.Fill(this.systemDataSet.Items);
+            };
+            mIF.ShowDialog();
         }
     }
 }

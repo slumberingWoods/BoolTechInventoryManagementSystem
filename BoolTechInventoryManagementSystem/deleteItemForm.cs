@@ -36,6 +36,8 @@ namespace BoolTechInventoryManagementSystem
                 int i = cmd.ExecuteNonQuery();
                 con.Close();
                 idtextBox.Text = string.Empty;
+                SystemDataSetTableAdapters.ItemsTableAdapter itemTableAdapter = new SystemDataSetTableAdapters.ItemsTableAdapter();
+                itemTableAdapter.DeleteQuery(id);
                 DialogResult res = MessageBox.Show("Item Removed " + i);
             }
             catch (Exception ex)

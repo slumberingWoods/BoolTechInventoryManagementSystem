@@ -13,6 +13,7 @@ namespace BoolTechInventoryManagementSystem
 {
     public partial class loginScreenForm : Form
     {
+        string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
         public loginScreenForm()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace BoolTechInventoryManagementSystem
             string username = usernameTextbox.Text;
             string password = passwordTextbox.Text;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
+            con.ConnectionString = ConnectionString;
             con.Open();
             bool passwordCheck = false;
             SqlCommand cmd = new SqlCommand();
@@ -53,7 +54,7 @@ namespace BoolTechInventoryManagementSystem
             string password = passwordTextbox.Text;
             int clear = 0;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
+            con.ConnectionString = ConnectionString;
             con.Open();
             bool passwordCheck = false;
             SqlCommand cmd = new SqlCommand();

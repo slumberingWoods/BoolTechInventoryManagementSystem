@@ -14,6 +14,7 @@ namespace BoolTechInventoryManagementSystem
 {
     public partial class addItemForm : Form
     {
+        string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
         public addItemForm()
         {
             InitializeComponent();
@@ -33,7 +34,6 @@ namespace BoolTechInventoryManagementSystem
             string status = statustextBox.Text;
             decimal cost = decimal.Parse(costtextBox.Text);
             decimal price = decimal.Parse(pricetextBox.Text);
-            string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
             string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
             string path = (System.IO.Path.GetDirectoryName(executable));
             AppDomain.CurrentDomain.SetData("DataDirectory", path);
@@ -45,6 +45,8 @@ namespace BoolTechInventoryManagementSystem
             con.Open();
             int i = cmd.ExecuteNonQuery();
             con.Close();
+            SystemDataSetTableAdapters.ItemsTableAdapter itemTableAdapter = new SystemDataSetTableAdapters.ItemsTableAdapter();
+            itemTableAdapter.Insert(name, type, quantity, aisle, status, cost, price);
             DialogResult res = MessageBox.Show("Item Added");
         }
         public void clearBoxes()

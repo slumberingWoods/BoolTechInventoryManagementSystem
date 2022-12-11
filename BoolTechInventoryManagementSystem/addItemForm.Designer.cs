@@ -182,7 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 278);
+            this.ClientSize = new System.Drawing.Size(276, 271);
             this.Controls.Add(this.pricetextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.clearData);
