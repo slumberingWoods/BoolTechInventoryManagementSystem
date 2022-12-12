@@ -61,5 +61,10 @@ namespace BoolTechInventoryManagementSystem
             };
             mIF.ShowDialog();
         }
+
+        private void itemsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

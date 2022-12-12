@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BoolTechInventoryManagementSystem.SystemDataSetTableAdapters;
 
 namespace BoolTechInventoryManagementSystem
 {
     public partial class loginScreenForm : Form
     {
-        string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
+        string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Irman\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
         public loginScreenForm()
         {
             InitializeComponent();
@@ -37,6 +38,10 @@ namespace BoolTechInventoryManagementSystem
                 {
                     passwordCheck = true;
                     Selection sl = new Selection(password);
+                    sl.FormClosed += delegate
+                    {
+                        this.Show();
+                    };
                     sl.Show();
                     this.Hide();
                     break;
@@ -67,6 +72,10 @@ namespace BoolTechInventoryManagementSystem
                 {
                     if (rd[3].ToString() == "admin") {
                         adminForm ad = new adminForm();
+                        ad.FormClosed += delegate
+                        {
+                            this.Show();
+                        };
                         ad.Show();
                         this.Hide();
                         passwordCheck= true;
@@ -84,6 +93,11 @@ namespace BoolTechInventoryManagementSystem
             {
                 DialogResult res = MessageBox.Show("User or password is incorrect");
             }
+        }
+
+        private void loginScreenForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

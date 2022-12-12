@@ -69,6 +69,7 @@
             this.Controls.Add(this.idtextBox);
             this.Name = "deleteItemForm";
             this.Text = "deleteItemForm";
+            this.Load += new System.EventHandler(this.deleteItemForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

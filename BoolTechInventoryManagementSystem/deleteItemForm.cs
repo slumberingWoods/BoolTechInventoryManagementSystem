@@ -22,7 +22,7 @@ namespace BoolTechInventoryManagementSystem
         {
             try
             {
-                string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
+                string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Irman\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
                 string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
                 string path = (System.IO.Path.GetDirectoryName(executable));
                 AppDomain.CurrentDomain.SetData("DataDirectory", path);
@@ -44,6 +44,11 @@ namespace BoolTechInventoryManagementSystem
             {
                 DialogResult res = MessageBox.Show(ex.Message);
             }
+        }
+
+        private void deleteItemForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

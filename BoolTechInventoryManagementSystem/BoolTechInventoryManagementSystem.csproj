@@ -69,6 +69,12 @@
     <Compile Include="addItemForm.Designer.cs">
       <DependentUpon>addItemForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="addUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUserForm.Designer.cs">
+      <DependentUpon>addUserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     <Compile Include="deleteItemForm.Designer.cs">
       <DependentUpon>deleteItemForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="deleteUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteUserForm.Designer.cs">
+      <DependentUpon>deleteUserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +104,12 @@
     </Compile>
     <Compile Include="modifyItems.Designer.cs">
       <DependentUpon>modifyItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifyUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifyUserForm.Designer.cs">
+      <DependentUpon>modifyUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,17 +136,26 @@
     <EmbeddedResource Include="addItemForm.resx">
       <DependentUpon>addItemForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addUserForm.resx">
+      <DependentUpon>addUserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminForm.resx">
       <DependentUpon>adminForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deleteItemForm.resx">
       <DependentUpon>deleteItemForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="deleteUserForm.resx">
+      <DependentUpon>deleteUserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginScreenForm.resx">
       <DependentUpon>loginScreenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modifyItems.resx">
       <DependentUpon>modifyItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyUserForm.resx">
+      <DependentUpon>modifyUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

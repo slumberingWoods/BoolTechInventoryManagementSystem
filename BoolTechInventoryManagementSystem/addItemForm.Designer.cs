@@ -201,6 +201,7 @@
             this.Controls.Add(this.label1);
             this.Name = "addItemForm";
             this.Text = "addItemForm";
+            this.Load += new System.EventHandler(this.addItemForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

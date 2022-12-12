@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BoolTechInventoryManagementSystem.SystemDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,46 @@ namespace BoolTechInventoryManagementSystem
         {
             // TODO: This line of code loads data into the 'systemDataSet.User' table. You can move, or remove it, as needed.
             this.userTableAdapter.Fill(this.systemDataSet.User);
+
+        }
+
+        private void userDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            addUserForm auF = new addUserForm();
+            auF.FormClosed += delegate
+            {
+                userTableAdapter.Fill(this.systemDataSet.User);
+            };
+            auF.ShowDialog();
+        }
+
+        private void modify_Click(object sender, EventArgs e)
+        {
+            modifyUserForm muF = new modifyUserForm();
+            muF.FormClosed += delegate
+            {
+                userTableAdapter.Fill(this.systemDataSet.User);
+            };
+            muF.ShowDialog();
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            deleteUserForm duF = new deleteUserForm();
+            duF.FormClosed += delegate
+            {
+                userTableAdapter.Fill(this.systemDataSet.User);
+            };
+            duF.ShowDialog();
+        }
+
+        private void adminForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
 
         }
     }

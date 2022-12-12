@@ -103,6 +103,7 @@
             this.Controls.Add(this.label1);
             this.Name = "loginScreenForm";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.loginScreenForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

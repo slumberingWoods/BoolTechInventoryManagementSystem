@@ -10,9 +10,12 @@
     }
 }
 
-namespace BoolTechInventoryManagementSystem.SystemDataSetTableAdapters {
-    
-    
+namespace BoolTechInventoryManagementSystem.SystemDataSetTableAdapters
+{
+    partial class UserTableAdapter
+    {
+    }
+
     public partial class ItemsTableAdapter {
     }
 }

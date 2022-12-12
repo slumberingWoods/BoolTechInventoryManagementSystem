@@ -112,6 +112,7 @@
             this.statustextBox.ReadOnly = true;
             this.statustextBox.Size = new System.Drawing.Size(141, 20);
             this.statustextBox.TabIndex = 25;
+            this.statustextBox.TextChanged += new System.EventHandler(this.statustextBox_TextChanged);
             // 
             // label5
             // 
@@ -265,6 +266,7 @@
             this.Controls.Add(this.label1);
             this.Name = "modifyItems";
             this.Text = "modifyItems";
+            this.Load += new System.EventHandler(this.modifyItems_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

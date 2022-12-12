@@ -92,6 +92,7 @@
             this.itemsDataGridView.Name = "itemsDataGridView";
             this.itemsDataGridView.Size = new System.Drawing.Size(843, 220);
             this.itemsDataGridView.TabIndex = 0;
+            this.itemsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.itemsDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 

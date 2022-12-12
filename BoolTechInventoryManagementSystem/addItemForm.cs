@@ -14,7 +14,7 @@ namespace BoolTechInventoryManagementSystem
 {
     public partial class addItemForm : Form
     {
-        string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\hallo\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
+        string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Irman\BoolTechInventoryManagementSystem\BoolTechInventoryManagementSystem\System.mdf;Integrated Security=True";
         public addItemForm()
         {
             InitializeComponent();
@@ -58,6 +58,11 @@ namespace BoolTechInventoryManagementSystem
             statustextBox.Text = string.Empty;
             costtextBox.Text = string.Empty;
             pricetextBox.Text = string.Empty;
+        }
+
+        private void addItemForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
