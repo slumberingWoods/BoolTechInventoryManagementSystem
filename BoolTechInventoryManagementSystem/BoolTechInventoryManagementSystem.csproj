@@ -51,7 +51,9 @@
     <Reference Include="System">
       <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,6 +71,12 @@
     <Compile Include="addItemForm.Designer.cs">
       <DependentUpon>addItemForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="addSalesLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSalesLog.designer.cs">
+      <DependentUpon>addSalesLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="addUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,17 +89,43 @@
     <Compile Include="adminForm.Designer.cs">
       <DependentUpon>adminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangeLanguage.cs" />
+    <Compile Include="changePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changePasswordForm.Designer.cs">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeUsernameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeUsernameForm.Designer.cs">
+      <DependentUpon>changeUsernameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionStringClass.cs" />
     <Compile Include="deleteItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="deleteItemForm.Designer.cs">
       <DependentUpon>deleteItemForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="deleteSalesLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteSalesLog.Designer.cs">
+      <DependentUpon>deleteSalesLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="deleteUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="deleteUserForm.Designer.cs">
       <DependentUpon>deleteUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialsForm.Designer.cs">
+      <DependentUpon>FinancialsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="loginScreenForm.cs">
       <SubType>Form</SubType>
@@ -105,6 +139,12 @@
     <Compile Include="modifyItems.Designer.cs">
       <DependentUpon>modifyItems.cs</DependentUpon>
     </Compile>
+    <Compile Include="modifySalesLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifySalesLog.Designer.cs">
+      <DependentUpon>modifySalesLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="modifyUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +153,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesLog.designer.cs">
+      <DependentUpon>SalesLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Selection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,34 +173,172 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SystemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="userViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userViewForm.Designer.cs">
+      <DependentUpon>userViewForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="viewItemsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="viewItemsForm.Designer.cs">
       <DependentUpon>viewItemsForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addItemForm.en-CA.resx">
+      <DependentUpon>addItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addItemForm.fr.resx">
+      <DependentUpon>addItemForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addItemForm.resx">
       <DependentUpon>addItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addItemForm.ru.resx">
+      <DependentUpon>addItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSalesLog.en-CA.resx">
+      <DependentUpon>addSalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSalesLog.fr.resx">
+      <DependentUpon>addSalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSalesLog.resx">
+      <DependentUpon>addSalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSalesLog.ru.resx">
+      <DependentUpon>addSalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUserForm.en-CA.resx">
+      <DependentUpon>addUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUserForm.fr.resx">
+      <DependentUpon>addUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addUserForm.resx">
       <DependentUpon>addUserForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addUserForm.ru.resx">
+      <DependentUpon>addUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForm.fr.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminForm.resx">
       <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForm.ru.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePasswordForm.en-CA.resx">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePasswordForm.fr.resx">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePasswordForm.resx">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePasswordForm.ru.resx">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeUsernameForm.fr.resx">
+      <DependentUpon>changeUsernameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeUsernameForm.resx">
+      <DependentUpon>changeUsernameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeUsernameForm.ru.resx">
+      <DependentUpon>changeUsernameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteItemForm.en-CA.resx">
+      <DependentUpon>deleteItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteItemForm.fr.resx">
+      <DependentUpon>deleteItemForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deleteItemForm.resx">
       <DependentUpon>deleteItemForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="deleteItemForm.ru.resx">
+      <DependentUpon>deleteItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteSalesLog.en-CA.resx">
+      <DependentUpon>deleteSalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteSalesLog.fr.resx">
+      <DependentUpon>deleteSalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteSalesLog.resx">
+      <DependentUpon>deleteSalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteSalesLog.ru.resx">
+      <DependentUpon>deleteSalesLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="deleteUserForm.resx">
       <DependentUpon>deleteUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialsForm.fr.resx">
+      <DependentUpon>FinancialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialsForm.resx">
+      <DependentUpon>FinancialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialsForm.ru.resx">
+      <DependentUpon>FinancialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginScreenForm.en-CA.resx">
+      <DependentUpon>loginScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginScreenForm.fr.resx">
+      <DependentUpon>loginScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginScreenForm.nqo.resx">
+      <DependentUpon>loginScreenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginScreenForm.resx">
       <DependentUpon>loginScreenForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="loginScreenForm.ru.resx">
+      <DependentUpon>loginScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyItems.en-CA.resx">
+      <DependentUpon>modifyItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyItems.fr.resx">
+      <DependentUpon>modifyItems.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modifyItems.resx">
       <DependentUpon>modifyItems.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modifyItems.ru.resx">
+      <DependentUpon>modifyItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifySalesLog.en-CA.resx">
+      <DependentUpon>modifySalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifySalesLog.en.resx">
+      <DependentUpon>modifySalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifySalesLog.fr.resx">
+      <DependentUpon>modifySalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifySalesLog.resx">
+      <DependentUpon>modifySalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifySalesLog.ru.resx">
+      <DependentUpon>modifySalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyUserForm.en-CA.resx">
+      <DependentUpon>modifyUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyUserForm.fr.resx">
+      <DependentUpon>modifyUserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modifyUserForm.resx">
+      <DependentUpon>modifyUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyUserForm.ru.resx">
       <DependentUpon>modifyUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -166,10 +350,52 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SalesLog.en-CA.resx">
+      <DependentUpon>SalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesLog.fr.resx">
+      <DependentUpon>SalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesLog.resx">
+      <DependentUpon>SalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesLog.ru.resx">
+      <DependentUpon>SalesLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selection.en-CA.resx">
+      <DependentUpon>Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selection.fr.resx">
+      <DependentUpon>Selection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Selection.resx">
       <DependentUpon>Selection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Selection.ru.resx">
+      <DependentUpon>Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userViewForm.en-CA.resx">
+      <DependentUpon>userViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userViewForm.fr.resx">
+      <DependentUpon>userViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userViewForm.resx">
+      <DependentUpon>userViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userViewForm.ru.resx">
+      <DependentUpon>userViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewItemsForm.en.resx">
+      <DependentUpon>viewItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewItemsForm.fr.resx">
+      <DependentUpon>viewItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewItemsForm.resx">
+      <DependentUpon>viewItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewItemsForm.ru.resx">
       <DependentUpon>viewItemsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
